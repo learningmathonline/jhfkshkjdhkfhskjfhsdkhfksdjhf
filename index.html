@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella BDAY!!!</title>
+    <link rel="icon" href="https://i.ibb.co/GRZxvsy/bg.jpg">
+    <style>
+      * {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  body {
+    background: #ff2b7f;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .card {
+    background: #ffb6c1;
+    border-radius: 4px;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  @media only screen and (max-height: 640px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  img.birthday {
+    max-height: 40vh;
+  }
+  
+  .text {
+    padding: 1em;
+  }
+  
+  .muted {
+    opacity: 0.8;
+  }
+  
+  .space {
+    height: 100px;
+  }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://i.ibb.co/f27vRZM/d.png" alt="birthday" class="birthday">
+        <div class="text">
+          <h1>Bellas B-Day</h1>
+          <p>Head to the backyard and join the party!</p>
+          <p class="muted">Bellas B-Day</p>
+        </div>
+        <div class="space"></div>
+    </div>
+</body>
+</html>
